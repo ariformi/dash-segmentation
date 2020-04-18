@@ -139,7 +139,7 @@ app.layout = html.Div([
                                 style={'font-size': 20})),
                         
                         dbc.Col(html.Img(src ='/logo.png',
-                                 style = {'width': '20%',
+                                 style = {
                                          'float': 'right'}))
                             ]),
     
