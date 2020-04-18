@@ -33,11 +33,11 @@ df.head()
 # In[35]:
 
 
-'''def encode_image(image_file):
+def encode_image(image_file):
     encoded = base64.b64encode(open(image_file, 'rb').read()) 
     return 'data:image/png;base64,{}'.format(encoded.decode())
 
-path_img = 'https://github.com/ariformi/dash-segmentation/blob/master/logo.png'''
+path_img = '/logo.png'
 
 
 
@@ -138,8 +138,8 @@ app.layout = html.Div([
                         dbc.Col(html.H1(children='MISCUSI FAMILY SEGMENTATION',
                                 style={'font-size': 20})),
                         
-                        dbc.Col(html.Img(src ='/logo.png',
-                                 style = {
+                        dbc.Col(html.Img(src= encode_image(path_img),
+                                 style = {'width': '20%',
                                          'float': 'right'}))
                             ]),
     
