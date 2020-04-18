@@ -138,7 +138,7 @@ app.layout = html.Div([
                         dbc.Col(html.H1(children='MISCUSI FAMILY SEGMENTATION',
                                 style={'font-size': 20})),
                         
-                        dbc.Col(html.Img(src= '',
+                        dbc.Col(html.Img(src= 'logo.png',
                                  style = {
                                          'float': 'right'}))
                             ]),
